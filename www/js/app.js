@@ -43,20 +43,12 @@ angular.module('epihack', [
         }
     })
 
-    .state('app.browse', {
-        url: "/browse",
-        views: {
-            'menuContent': {
-                templateUrl: "templates/browse.html"
-            }
-        }
-    })
     .state('app.playlists', {
         url: "/playlists",
         views: {
             'menuContent': {
-                templateUrl: "templates/playlists.html",
-                controller: 'PlaylistsCtrl'
+                templateUrl: "templates/list.html",
+                controller: 'ListCtrl'
             }
         }
     })
