@@ -56,5 +56,8 @@ angular.module('epihack.controllers', [])
 })
 
 .controller('ReportCtrl', function($scope) {
-
+    $scope.report = {};
+    $scope.doReport = function (report) {
+        console.log($scope.report);
+    };
 });
