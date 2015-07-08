@@ -10,7 +10,7 @@ angular.module('epihack', [
     'monospaced.elastic'
 ])
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform, $rootScope) {
     $ionicPlatform.ready(function() {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
         // for form inputs)
@@ -22,6 +22,7 @@ angular.module('epihack', [
             StatusBar.styleDefault();
         }
     });
+    $rootScope.settings = SETTINGS;
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
@@ -33,32 +34,19 @@ angular.module('epihack', [
         templateUrl: "templates/menu.html",
         controller: 'AppCtrl'
     })
-
+    .state('app.splash', {
+        url: "/splash",
+        views: {
+            'menuContent': {
+                templateUrl: "templates/splash.html"
+            }
+        }
+    })
     .state('app.home', {
         url: "/home",
         views: {
             'menuContent': {
                 templateUrl: "templates/home.html"
-            }
-        }
-    })
-
-    .state('app.playlists', {
-        url: "/playlists",
-        views: {
-            'menuContent': {
-                templateUrl: "templates/list.html",
-                controller: 'ListCtrl'
-            }
-        }
-    })
-
-    .state('app.single', {
-        url: "/playlists/:playlistId",
-        views: {
-            'menuContent': {
-                templateUrl: "templates/playlist.html",
-                controller: 'PlaylistCtrl'
             }
         }
     })
@@ -81,5 +69,5 @@ angular.module('epihack', [
         }
     });
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/report');
+    $urlRouterProvider.otherwise('/app/splash');
 });
