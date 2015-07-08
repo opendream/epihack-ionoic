@@ -3,24 +3,24 @@
         <form ng-submit="doReport(form)">
             <div class="list">
 
-                <label class="item item-input">
+                <label class="item item-input item-floating-label">
                     <span class="input-label">Email</span>
-                    <input type="email" ng-model="report.email" required>
+                    <input placeholder="Email" type="email" ng-model="report.email" required>
                 </label>
 
-                <label class="item item-input">
-                    <span class="input-label">First name</span>
-                    <input type="text" ng-model="report.first_name">
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">First Name</span>
+                    <input placeholder="First Name" type="text" ng-model="report.first_name">
                 </label>
 
-                <label class="item item-input">
-                    <span class="input-label">Last name</span>
-                    <input type="text" ng-model="report.last_name">
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Last Name</span>
+                    <input placeholder="Last Name" type="text" ng-model="report.last_name">
                 </label>
 
                 <label class="item item-input">
                     <span class="input-label">Age</span>
-                    <input type="text" ng-model="report.age">
+                    <input type="number" min="0" ng-model="report.age">
                 </label>
 
                 <div class="item item-divider">
