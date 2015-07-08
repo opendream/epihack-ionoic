@@ -1,48 +1,24 @@
-<ion-view view-title="Report">
+<ion-view view-title="Your Feeling">
     <ion-content>
 
         <h4 class="title text-center">
             Are you feeling well today ?
         </h4>
-            <div class="item item-text-wrap row">
-                <div class="col card text-center">
-                    <a href="#" class="item">
-                        <i class="icon ion-happy-outline feeling-icon"></i>
-                        <br />
-                        Yes
-                    </a>
-                </div>
-                <div class="col card text-center">
-                    <a href="#" class="item">
-                        <i class="icon ion-sad-outline feeling-icon"></i>
-                        <br />
-                        No
-                    </a>
-                </div>
+        <div class="item item-text-wrap row">
+            <div class="col card text-center">
+                <a ng-click="thank()" class="item">
+                    <i class="icon ion-happy-outline feeling-icon"></i>
+                    <br />
+                    Yes
+                </a>
             </div>
-
-        ion-happy-outline
-        <form ng-submit="doReport(form)">
-            <div class="list">
-
-                <div class="item item-divider">
-                    Symptoms
-                </div>
-                <ion-checkbox ng-model="report.symptoms[0]" ng-checked="report.symptoms[0].checked">Symptom 1</ion-checkbox>
-                <ion-checkbox ng-model="report.symptoms[1]" ng-checked="report.symptoms[1].checked">Symptom 2</ion-checkbox>
-                <ion-checkbox ng-model="report.symptoms[2]" ng-checked="report.symptoms[2].checked">Symptom 3</ion-checkbox>
-
-                <div class="item item-divider">
-                    Detail
-                </div>
-                <label class="item item-input">
-                    <textarea msd-elastic placeholder="Enter your detail" ng-model="report.detail" class="no-resize"></textarea>
-                </label>
-
-                <label class="item">
-                    <button class="button button-block button-positive" type="submit">Submit</button>
-                </label>
+            <div class="col card text-center">
+                <a href="#/app/report/form" class="item">
+                    <i class="icon ion-sad-outline feeling-icon"></i>
+                    <br />
+                    No
+                </a>
             </div>
-        </form>
+        </div>
     </ion-content>
 </ion-view>

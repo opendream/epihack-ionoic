@@ -262,3 +262,23 @@ YEAR_OF_BIRTH = [];
 for (var year=THIS_YEAR; year>THIS_YEAR-100; year--) {
     YEAR_OF_BIRTH.push({code: year, name: year});
 }
+
+
+SYMPTOMS = [
+    {code: "Jaw Pain", name: "Jaw Pain"},
+    {code: "Sore Tongue", name: "Sore Tongue"},
+    {code: "Blurred Vision", name: "Blurred Vision"},
+    {code: "Loss of Taste Sensation", name: "Loss of Taste Sensation"},
+    {code: "Hot Flashes", name: "Hot Flashes"},
+    {code: "Runny Nose", name: "Runny Nose"},
+    {code: "Inattention", name: "Inattention"},
+    {code: "Metallic Taste in the Mouth", name: "Metallic Taste in the Mouth"},
+    {code: "Eye Discharge", name: "Eye Discharge"},
+    {code: "Joint Redness", name: "Joint Redness"},
+    {code: "Burning Urination", name: "Burning Urination"},
+    {code: "Urinary Incontinence", name: "Urinary Incontinence"},
+    {code: "Swollen Eyes", name: "Swollen Eyes"},
+    {code: "Mouth Sores", name: "Mouth Sores"},
+    {code: "Urinary Retention", name: "Urinary Retention"},
+    {code: "Bad Taste in the Mouth", name: "Bad Taste in the Mouth"}
+]

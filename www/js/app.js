@@ -78,6 +78,15 @@ angular.module('epihack', [
                 controller: 'ReportCtrl'
             }
         }
+    })
+    .state('app.reportForm', {
+        url: "/report/form",
+        views: {
+            'menuContent': {
+                templateUrl: "templates/report.form.html",
+                controller: 'ReportCtrl'
+            }
+        }
     });
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/app/report');

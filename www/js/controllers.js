@@ -31,6 +31,7 @@ angular.module('epihack.controllers', [])
     $scope.genders = GENDERS;
     $scope.countries = COUNTRIES;
     $scope.years = YEAR_OF_BIRTH;
+    $scope.symptoms = SYMPTOMS;
 
     // For force logout
     //window.localStorage.removeItem('user');
@@ -61,6 +62,19 @@ angular.module('epihack.controllers', [])
     };
 
 
+    $ionicModal.fromTemplateUrl('templates/thank.html', {
+        scope: $scope
+    }).then(function(modal) {
+        $scope.thankModal = modal;
+    });
+
+    // Open the login modal
+    $scope.thank = function() {
+        $scope.thankModal.show();
+    };
+    $scope.closeThank = function() {
+        $scope.thankModal.hide();
+    };
 
     // Perform the login action when the user submits the login form
     $scope.doLogin = function() {
