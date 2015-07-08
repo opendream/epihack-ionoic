@@ -1,10 +1,8 @@
 {
-  "name": "HelloIonic",
+  "name": "Epihack",
   "private": "true",
   "devDependencies": {
-    "ionic": "driftyco/ionic-bower#1.0.1"
-  },
-  "dependencies": {
+    "ionic": "driftyco/ionic-bower#1.0.1",
     "angular-elastic": "~2.4.2"
   }
 }
