@@ -4,7 +4,12 @@
         <form ng-submit="doReport(form)">
             <div class="list">
 
-                <ion-checkbox ng-repeat="symptom in symptoms track by $index" ng-model="report.symptoms[$index]" ng-checked="symptom.code == report.symptoms[$index]">{{ symptom.name }}</ion-checkbox>
+                <ion-checkbox ng-repeat="symptom in symptoms track by $index"
+                              ng-model="report.symptoms[$index]"
+                              ng-checked="symptom.code == report.symptoms[$index]">
+                    {{ symptom.name }}
+                    <img ng-src="/img/symptom-icons/{{ symptom.code }}.png" alt=""/>
+                </ion-checkbox>
 
                 <div class="item item-divider">
                     When do you experience symptom ?

@@ -8,6 +8,7 @@ angular.module('epihack', [
     'ionic',
     'ui.router',
     'epihack.controllers',
+    'epihack.directives',
     'monospaced.elastic'
 ])
 
@@ -74,6 +75,15 @@ angular.module('epihack', [
             'menuContent': {
                 templateUrl: "templates/report.form.html",
                 controller: 'ReportCtrl'
+            }
+        }
+    })
+    .state('app.map', {
+        url: "/map",
+        views: {
+            'menuContent': {
+                templateUrl: "templates/map.html",
+                controller: 'MapCtrl'
             }
         }
     });
