@@ -26,7 +26,6 @@
     position: absolute;
     bottom: 20px;
     left: 0;
-
 }
 .home-menu::after {
     content: " ";
@@ -36,4 +35,12 @@
 .footer-no-height {
     height: 0;
     padding: 0;
+}
+
+.page-meta {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #FFF;
+    text-align: left;
 }

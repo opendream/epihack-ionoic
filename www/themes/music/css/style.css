@@ -16,6 +16,23 @@
     color: #FFF;
 }
 
+.view-container .menu-left .bar.bar-stable {
+    background-image: url('../img/header.png');
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
+    height: 155px;
+}
+.menu-left .has-header {
+    top: 155px;
+}
+.menu-left a {
+    font-weight: bold;
+}
+.menu-left h1.title {
+    display: none;
+}
+
 .splash-image {
     background-image: url('../img/splash.png');
 }
@@ -26,3 +43,24 @@
     background-image: url('../img/home-menu.png');
     max-height: 500px;
 }
+
+/* orign from center */
+.home-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    z-index: 2;
+}
+#home-report {
+    z-index: 3;
+}
+
+/* home menu item positions */
+#home-report    { margin-top: -16%; margin-left: -17%; width:  34%; height:  34%; } /* Center */
+#home-content-1 { margin-top: -45%; margin-left: -45%; width:  40%; height:  30%; } /* Top Left */
+#home-content-2 { margin-top: -45%; margin-left:   5%; width:  40%; height:  30%; } /* Top Right */
+#home-content-3 { margin-top: -12%; margin-left:  22%; width:  19%; height:  27%; } /* Right */
+#home-content-4 { margin-top:  17%; margin-left:   5%; width:  40%; height:  30%; } /* Bottom Right */
+#home-content-5 { margin-top:  17%; margin-left: -45%; width:  40%; height:  30%; } /* Bottom Left */
+#home-content-6 { margin-top: -12%; margin-left: -42%; width:  19%; height:  27%; } /* Left */
