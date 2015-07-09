@@ -111,3 +111,56 @@
 .feeling-sick {
     background-image: url('../img/feeling-sick.png');
 }
+
+.symptom-list {
+    padding: 5px;
+}
+.symptom-item {
+    display: block;
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+    overflow: visible;
+}
+
+.symptom-item label{
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    padding: 0;
+    position: relative;
+
+}
+
+.symptom-item label .checkbox {
+    position: absolute;
+    top: 90%;
+    left: 65%;
+}
+.symptom-item label .item-content {
+    display: none;
+}
+.symptom-item label::after {
+    content: " ";
+    padding-top: 100%;
+    display: block;
+}
+
+.symptom-item .item-checkbox {
+    background-color: transparent;
+    overflow: visible;
+}
+
+.symptom-cough        label {background-image: url('../img/symptom-icons/cough.png');}
+.symptom-diarrhea     label {background-image: url('../img/symptom-icons/diarrhea.png');}
+.symptom-fever        label {background-image: url('../img/symptom-icons/fever.png');}
+.symptom-headache     label {background-image: url('../img/symptom-icons/headache.png');}
+.symptom-jaw-pain     label {background-image: url('../img/symptom-icons/jaw-pain.png');}
+.symptom-joint-pain   label {background-image: url('../img/symptom-icons/joint-pain.png');}
+.symptom-mouth-sore   label {background-image: url('../img/symptom-icons/mouth-sore.png');}
+.symptom-nausea       label {background-image: url('../img/symptom-icons/nausea.png');}
+.symptom-rash         label {background-image: url('../img/symptom-icons/rash.png');}
+.symptom-runny-nose   label {background-image: url('../img/symptom-icons/runny-nose.png');}
+.symptom-sore-throat  label {background-image: url('../img/symptom-icons/sore-throat.png');}
+.symptom-sore-tongue  label {background-image: url('../img/symptom-icons/sore-tongue.png');}
