@@ -1,0 +1,10 @@
+.view-container .bar.bar-stable {
+    border-color: #e42012;
+    background-color: #ef473a;
+    background-image: linear-gradient(0deg, #e42012, #e42012 1px, transparent 1px);
+    color: #FFF;
+}
+.view-container .bar.bar-stable .title,
+.view-container .bar-stable .button.button-clear {
+    color: #FFF;
+}

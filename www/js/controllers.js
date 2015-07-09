@@ -1,14 +1,15 @@
 angular.module('epihack.controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
-    console.log('lllllll');
-
     // Uncomment below for simulate app at the first time
-    window.localStorage.removeItem('user');
-    })
+    //window.localStorage.removeItem('user');
+})
 
+.controller('HomeCtrl', function($scope, $ionicViewService) {
+    // TODO: something with design
+})
 
-.controller('ReportCtrl', function($scope, $ionicModal, $timeout) {
+.controller('ReportCtrl', function($scope, $ionicModal, $timeout, $state, $ionicViewService) {
 
     // =============
     // USER
@@ -62,6 +63,10 @@ angular.module('epihack.controllers', [])
     };
     $scope.closeThank = function() {
         $scope.thankModal.hide();
+        $ionicViewService.nextViewOptions({
+            disableBack: true
+        });
+        $state.go('app.home');
     };
 
     // Perform the login action when the user submits the login form
@@ -86,5 +91,10 @@ angular.module('epihack.controllers', [])
 
         // TODO: POST API to epihack
         console.log($scope.report);
+        $scope.thankModal.show();
+
+        //$ionicViewService.nextViewOptions({
+        //    disableBack: true
+        //});
     };
 });

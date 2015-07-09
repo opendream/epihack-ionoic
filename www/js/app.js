@@ -6,6 +6,7 @@
 // 'epihack.controllers' is found in controllers.js
 angular.module('epihack', [
     'ionic',
+    'ui.router',
     'epihack.controllers',
     'monospaced.elastic'
 ])
@@ -46,7 +47,8 @@ angular.module('epihack', [
         url: "/home",
         views: {
             'menuContent': {
-                templateUrl: "templates/home.html"
+                templateUrl: "templates/home.html",
+                controller: 'HomeCtrl'
             }
         }
     })
