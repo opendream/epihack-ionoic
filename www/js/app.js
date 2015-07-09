@@ -35,13 +35,12 @@ angular.module('epihack', [
         templateUrl: "templates/menu.html",
         controller: 'AppCtrl'
     })
-    .state('app.splash', {
+    .state('splash', {
         url: "/splash",
-        views: {
-            'menuContent': {
-                templateUrl: "templates/splash.html"
-            }
-        }
+
+                templateUrl: "templates/splash.html",
+                controller: 'SplashCtrl'
+
     })
     .state('app.home', {
         url: "/home",
@@ -71,5 +70,5 @@ angular.module('epihack', [
         }
     });
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/splash');
+    $urlRouterProvider.otherwise('/splash');
 });

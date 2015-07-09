@@ -2,13 +2,57 @@ angular.module('epihack.controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
     // Uncomment below for simulate app at the first time
-    //window.localStorage.removeItem('user');
+    // window.localStorage.removeItem('user');
 })
 
-.controller('HomeCtrl', function($scope, $ionicViewService) {
+.controller('SplashCtrl', function($scope, $ionicModal, $timeout, $state, $ionicViewService) {
+    // Open the login modal
+    $scope.login = function() {
+        $scope.modal.show();
+    };
+    $scope.next = function() {
+        // Create the login modal that we will use later
+        $ionicModal.fromTemplateUrl('templates/login.html', {
+            scope: $scope
+        }).then(function(modal) {
+            $scope.modal = modal;
+
+            if (window.localStorage['user']) {
+                $ionicViewService.nextViewOptions({
+                    disableBack: true
+                });
+                $state.go('app.home');
+            }
+            else {
+                $scope.login();
+            }
+
+        });
+    };
+    $scope.doLogin = function() {
+        // TODO: POST API to epihack
+
+        window.localStorage['user'] = JSON.stringify($scope.user);
+        console.log('Doing login', $scope.user);
+
+        // Simulate a login delay. Remove this and replace with your login
+        // code if using a login system
+        $timeout(function() {
+            $scope.closeLogin();
+        }, 1000);
+    };
+    $scope.closeLogin = function() {
+        $scope.modal.hide();
+        $ionicViewService.nextViewOptions({
+            disableBack: true
+        });
+        $state.go('app.home');
+    };
+
+})
+.controller('HomeCtrl', function($scope) {
     // TODO: something with design
 })
-
 .controller('ReportCtrl', function($scope, $ionicModal, $timeout, $state, $ionicViewService) {
 
     // =============
