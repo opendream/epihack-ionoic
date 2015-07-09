@@ -45,6 +45,23 @@
     max-height: 500px;
 }
 
+.home-menu-wrapper {
+    margin: 40px;
+}
+.home-menu {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+.home-menu::after {
+    content: " ";
+    padding-top: 90%;
+    display: block;
+}
+
 /* orign from center */
 .home-item {
     position: absolute;
@@ -53,6 +70,14 @@
     cursor: pointer;
     z-index: 2;
 }
+.home-item.card {
+    background-color: transparent;
+    box-shadow: none;
+}
+.home-item .item-text-wrap {
+    display: none;
+}
+
 #home-report {
     z-index: 3;
 }
@@ -60,7 +85,7 @@
 /* home menu item positions */
 #home-report    { margin-top: -16%; margin-left: -17%; width:  34%; height:  34%; } /* Center */
 #home-content-1 { margin-top: -45%; margin-left: -45%; width:  40%; height:  30%; } /* Top Left */
-#home-content-2 { margin-top: -45%; margin-left:   5%; width:  40%; height:  30%; } /* Top Right */
+#home-map       { margin-top: -45%; margin-left:   5%; width:  40%; height:  30%; } /* Top Right */
 #home-content-3 { margin-top: -12%; margin-left:  22%; width:  19%; height:  27%; } /* Right */
 #home-content-4 { margin-top:  17%; margin-left:   5%; width:  40%; height:  30%; } /* Bottom Right */
 #home-content-5 { margin-top:  17%; margin-left: -45%; width:  40%; height:  30%; } /* Bottom Left */
