@@ -5,7 +5,8 @@
     color: #FFF;
 }
 .page--splash .view-container .nav-bar-block .bar.bar-stable,
-.page--app--home .view-container .nav-bar-block .bar.bar-stable {
+.page--app--home .view-container .nav-bar-block .bar.bar-stable,
+.page--app--report .view-container .nav-bar-block .bar.bar-stable {
     border-color: transparent;
     background-color: transparent;
     background-image: none;
@@ -64,3 +65,49 @@
 #home-content-4 { margin-top:  17%; margin-left:   5%; width:  40%; height:  30%; } /* Bottom Right */
 #home-content-5 { margin-top:  17%; margin-left: -45%; width:  40%; height:  30%; } /* Bottom Left */
 #home-content-6 { margin-top: -12%; margin-left: -42%; width:  19%; height:  27%; } /* Left */
+
+
+/* report */
+.report-image {
+    background-image: url('../img/report-bg.png');
+    background-position: top;
+}
+.page--app--report .header-item.title {
+    display: none;
+}
+.page--app--report h4.title {
+    color: #FFF;
+    margin-top: 80px;
+    font-size: 25px;
+}
+.row.feeling-list {
+    display: block;
+}
+.feeling-list .card {
+    width: 150px;
+    height: 150px;
+    margin: 30px auto 50px auto;
+    padding: 0;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    overflow: visible;
+}
+.feeling-list .card .icon {
+    display: none;
+}
+.feeling-list .card a {
+    background-color: transparent;
+    height: 168px;
+}
+.feeling-ans {
+    margin-top: 115px;
+    color: #FFF;
+    font-weight: bold;
+}
+.feeling-well {
+    background-image: url('../img/feeling-well.png');
+}
+.feeling-sick {
+    background-image: url('../img/feeling-sick.png');
+}

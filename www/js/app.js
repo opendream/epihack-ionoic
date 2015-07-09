@@ -25,7 +25,12 @@ angular.module('epihack', [
     });
     $rootScope.settings = SETTINGS;
     $rootScope.$on('$stateChangeStart', function (event, next) {
-        $rootScope.pageClass = 'page' + $location.path().split("/").join("--");
+        console.log(next);
+        //$rootScope.$apply(function () {
+            $rootScope.pageClass = 'page--app' + next.url.split("/").join("--");
+            console.log($rootScope.pageClass);
+
+        //});
     });
 })
 
