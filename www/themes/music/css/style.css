@@ -1,6 +1,6 @@
 .view-container .bar.bar-stable {
     border-color: #e42012;
-    background-color: #ef473a;
+    background-color: #FF4C4D;
     background-image: linear-gradient(0deg, #e42012, #e42012 1px, transparent 1px);
     color: #FFF;
 }
@@ -14,4 +14,15 @@
 .view-container .bar.bar-stable .title,
 .view-container .bar-stable .button.button-clear {
     color: #FFF;
+}
+
+.splash-image {
+    background-image: url('../img/splash.png');
+}
+.home-image {
+    background-image: url('../img/home-bg.png');
+}
+.home-image .home-menu {
+    background-image: url('../img/home-menu.png');
+    max-height: 500px;
 }

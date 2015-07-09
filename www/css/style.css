@@ -3,7 +3,7 @@
 .feeling-icon {
     font-size: 40px
 }
-.splash-image {
+.bg-full-image {
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -11,4 +11,29 @@
 }
 .splash-next {
     cursor: pointer;
+}
+
+.relative {
+    position: relative;
+}
+.home-menu-wrapper {
+    margin: 40px;
+}
+.home-menu {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+
+}
+.home-menu::after {
+    content: " ";
+    padding-top: 90%;
+    display: block;
+}
+.footer-no-height {
+    height: 0;
+    padding: 0;
 }
