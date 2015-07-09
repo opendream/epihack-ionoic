@@ -11,7 +11,7 @@ angular.module('epihack', [
     'monospaced.elastic'
 ])
 
-.run(function($ionicPlatform, $rootScope) {
+.run(function($ionicPlatform, $rootScope, $location) {
     $ionicPlatform.ready(function() {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
         // for form inputs)
@@ -24,6 +24,9 @@ angular.module('epihack', [
         }
     });
     $rootScope.settings = SETTINGS;
+    $rootScope.$on('$stateChangeStart', function (event, next) {
+        $rootScope.pageClass = 'page' + $location.path().split("/").join("--");
+    });
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
