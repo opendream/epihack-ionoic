@@ -1,0 +1,125 @@
+.view-container .bar.bar-stable {
+    border-color: #0f327d;
+    background-color: #174dc4;
+    background-image: linear-gradient(0deg, #174dc4, #174dc4 1px, transparent 1px);
+    color: #FFF;
+}
+.page--splash .view-container .nav-bar-block .bar.bar-stable,
+.page--app--home .view-container .nav-bar-block .bar.bar-stable,
+.page--app--report .view-container .nav-bar-block .bar.bar-stable,
+.page--app--report.modal-open ion-header-bar,
+.page--app--report--form.modal-open ion-header-bar {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: none;
+    color: #FFF;
+}
+.view-container .bar.bar-stable .title,
+.view-container .bar-stable .button.button-clear {
+    color: #FFF;
+}
+
+.splash-image {
+    background-image: url('../img/splash.png');
+}
+
+/* Home */
+.home-image {
+    background-image: url('../img/home-bg.png');
+}
+
+.home-item {
+    cursor: pointer;
+    width: 50%;
+    margin: 0;
+    display: block;
+    float: left;
+    padding: 10px;
+}
+.home-item.card {
+    background-color: transparent;
+    box-shadow: none;
+    text-decoration: none;
+}
+.home-item .item-text-wrap {
+    height: 100px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    opacity: 0.88;
+    background-color: antiquewhite;
+}
+.home-item .item-text-wrap h3 {
+    font-size: 18px;
+    margin-top: 22px;
+    text-align: center;
+    font-weight: 200;
+}
+
+
+/* report */
+.report-image {
+    background-image: url('../img/bg.png');
+    background-position: top;
+}
+.page--app--report .header-item.title {
+    display: none;
+}
+.page--app--report h4.title {
+    color: #FFF;
+    margin-top: 80px;
+    font-size: 25px;
+}
+
+
+.feeling-list .card {
+    width: 150px;
+    height: 150px;
+    padding: 0;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    overflow: visible;
+    box-shadow: none;
+}
+.feeling-list .card .icon {
+    display: none;
+}
+.feeling-list .card a {
+    background-color: transparent;
+    height: 168px;
+}
+.feeling-ans {
+    margin-top: 115px;
+    color: #FFF;
+    font-weight: bold;
+}
+.feeling-well {
+    background-image: url('../img/feeling-well.png');
+}
+.feeling-sick {
+    background-image: url('../img/feeling-sick.png');
+}
+
+/* Thank */
+.thank-image {
+    background-image: url('../img/bg2.png');
+    background-position: top;
+}
+
+.card.thank-text {
+    margin-top: 110px;
+    background-color: transparent;
+}
+
+.card.thank-text .item-text-wrap {
+    background-color: transparent;
+    font-weight: bold;
+    color: #FFF;
+    font-size: 20px;
+
+}
+
+.button.button-light.close-thank {
+    background-color: transparent;
+    color: #FFF;
+}

@@ -2,4 +2,4 @@
 SETTINGS = {};
 
 // basic, music
-SETTINGS.THEME = 'music';
+SETTINGS.THEME = 'sport';

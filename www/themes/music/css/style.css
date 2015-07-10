@@ -14,7 +14,7 @@
     background-image: none;
     color: #FFF;
 }
-.view-container .bar.bar-stable .title,
+.view-container .bar.bar-stable .report-image ,
 .view-container .bar-stable .button.button-clear {
     color: #FFF;
 }
@@ -39,6 +39,8 @@
 .splash-image {
     background-image: url('../img/splash.png');
 }
+
+/* Home */
 .home-image {
     background-image: url('../img/home-bg.png');
 }
