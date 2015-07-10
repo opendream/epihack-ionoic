@@ -1,13 +1,15 @@
-<ion-modal-view>
-    <ion-header-bar>
-        <h1 class="title">Thank you</h1>
-    </ion-header-bar>
-    <ion-content>
-        <div class="card">
-            <div class="item item-text-wrap text-center">Thank you for feedback ous,<br/> have a good day.</div>
-        </div>
-        <div class="text-center">
-            <button class="button button-light" ng-click="closeThank()">Close</button>
-        </div>
-    </ion-content>
+
+<ion-modal-view class="bg-full-image thank-image">
+        <ion-header-bar>
+            <h1 class="title">Thank you</h1>
+        </ion-header-bar>
+        <ion-content scroll="false">
+            <div class="card thank-text">
+                <div class="item item-text-wrap text-center">Thank you for feedback ous,<br/> have a good day.</div>
+            </div>
+            <div class="text-center">
+                <button class="button button-light close-thank" ng-click="closeThank()">Close</button>
+            </div>
+        </ion-content>
 </ion-modal-view>
+

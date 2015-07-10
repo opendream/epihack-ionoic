@@ -6,7 +6,9 @@
 }
 .page--splash .view-container .nav-bar-block .bar.bar-stable,
 .page--app--home .view-container .nav-bar-block .bar.bar-stable,
-.page--app--report .view-container .nav-bar-block .bar.bar-stable {
+.page--app--report .view-container .nav-bar-block .bar.bar-stable,
+.page--app--report.modal-open ion-header-bar,
+.page--app--report--form.modal-open ion-header-bar {
     border-color: transparent;
     background-color: transparent;
     background-image: none;
@@ -189,3 +191,27 @@
 .symptom-runny-nose   label {background-image: url('../img/symptom-icons/runny-nose.png');}
 .symptom-sore-throat  label {background-image: url('../img/symptom-icons/sore-throat.png');}
 .symptom-sore-tongue  label {background-image: url('../img/symptom-icons/sore-tongue.png');}
+
+/* Thank */
+.thank-image {
+    background-image: url('../img/report-bg.png');
+    background-position: top;
+}
+
+.card.thank-text {
+    margin-top: 110px;
+    background-color: transparent;
+}
+
+.card.thank-text .item-text-wrap {
+    background-color: transparent;
+    font-weight: bold;
+    color: #FFF;
+    font-size: 20px;
+
+}
+
+.button.button-light.close-thank {
+    background-color: transparent;
+    color: #FFF;
+}
